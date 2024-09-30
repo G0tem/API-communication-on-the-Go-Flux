@@ -1,1 +1,1 @@
-Логика crud task для api influxdb
+Пример вырезанной логики crud task для api influxdb
