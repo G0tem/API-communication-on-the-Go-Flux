@@ -15,6 +15,15 @@ type TaskResponse struct {
 	// Другие поля в соответствии с структурой ответа
 }
 
+func main() {
+	// ModbusRequest := ModbusRequest{
+	// 	RequestType: "Task",
+	// 	}
+	// Структура передается в другом месте, пример логики общения с api influxdb
+	}
+	AddInfluxTaskForDevice(modbusRequest ModbusRequest)
+}
+
 func AddInfluxTaskForDevice(modbusRequest ModbusRequest) {
 	if strings.HasPrefix(modbusRequest.RequestType, "Task") {
 		TaskInfluxdb(modbusRequest.RequestType, modbusRequest.Value)
